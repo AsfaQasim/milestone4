@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="h1">Resume by Asifa M.Qasim</h1>
+    <p class="p">I am a fresh full-stack developer, eager to apply my skills in both front-end and back-end technologies. With a solid foundation in web development, I'm excited to take on new challenges, learn, and grow in the world of software development.</p>
+    
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br/>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br/>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label>
+            <textarea id="education" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" rows="4" required></textarea>
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resumeOutput"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
